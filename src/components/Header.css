@@ -1,0 +1,150 @@
+/* Top bar styling */
+.topbar {
+  background: #d70034; /* Red background for the top bar */
+  color: white; /* White text color */
+  display: flex; /* Flexbox for layout */
+  justify-content: flex-end; /* Align items to the right */
+  gap: 10px; /* Space between items */
+  padding: 5px 20px; /* Padding around the top bar */
+  font-size: 14px; /* Font size for text */
+  align-items: center; /* Vertically center items */
+}
+
+.topbar button {
+  background: #aa001f; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  padding: 5px 10px; /* Padding inside the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Main navigation bar */
+.navbar {
+  background: #2a1b5f; /* Dark purple background */
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between logo and nav items */
+  align-items: center; /* Vertically center items */
+  padding: 10px 20px;
+   /* Padding around the navbar */
+}
+
+.logo {
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Vertically center items */
+  gap: 10px; /* Space between logo and text */
+  color: white; /* White text color */
+  font-weight: bold; /* Bold text */
+}
+
+.logo img {
+  height: 40px; /* Logo image height */
+}
+
+/* Navigation links */
+.navbar nav a {
+  color: white; /* White text color */
+  margin-left: 20px; /* Space between links */
+  text-decoration: none; /* Remove underline */
+  padding: 8px 12px; /* Padding inside links */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.navbar nav a.active,
+.navbar nav a:hover {
+  background: #00c5ff; /* Highlight color */
+  color: black; /* Text color on hover */
+}
+
+.bc2-header {
+  background: #2b1a66; /* BC purple */
+  width: 100%;
+}
+
+.bc2-container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 18px 0 0;
+}
+
+/* Top row */
+.bc2-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 14px;
+}
+
+.bc2-logos {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.bc2-bc-logo {
+  height: 34px;
+  width: auto;
+}
+
+.bc2-ielts-logo {
+  height: 34px;
+  width: auto;
+}
+
+/* Tabs row */
+.bc2-tabs {
+  display: flex;
+  gap: 0;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-bottom: 0px;
+  gap: 2px;
+}
+
+.bc2-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.12);
+  /* border-right: 1px solid rgba(0, 0, 0, 0.18); */
+  min-height: 42px;
+}
+
+.bc2-tab:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.bc2-tab:last-child {
+  border-right: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.bc2-tab:hover {
+  background: #12b5ea; /* cyan active like screenshot */
+  color: #2b1a66;
+}
+
+.bc2-tab--active {
+  background: #12b5ea; /* cyan active like screenshot */
+  color: #2b1a66;
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+  .bc2-tabs {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .bc2-tab {
+    border-right: none;
+    border-radius: 6px;
+  }
+}

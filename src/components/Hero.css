@@ -1,0 +1,40 @@
+.bc-hero {
+  background: linear-gradient(90deg, rgb(2, 99, 105) 0%, 29.918%, rgb(1, 141, 154) 59.8361%, 79.918%, rgb(2, 99, 105) 100%); /* Purple to Teal gradient */
+  padding: 0;
+}
+
+.bc-hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.bc-hero-text {
+  flex: 1;
+}
+
+.bc-h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.bc-paragraph {
+  font-size: 16px;
+  color: #e1e8f1;
+  line-height: 1.6;
+}
+
+.bc-hero-img {
+  display: flex;
+}
+
+.bc-hero-image {
+  max-width: 250px;
+  width: 100%;
+}

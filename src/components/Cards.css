@@ -1,0 +1,135 @@
+.bc-section {
+  padding: 50px 0;
+}
+
+.bc-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.bc-card-section {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Heading */
+.bc-h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2b1a66;
+  margin-bottom: 16px;
+}
+
+.bc-panel {
+  background-color: #f6f9fc;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+}
+
+.bc-muted {
+  color: #5b6770;
+  font-size: 14px;
+}
+
+.bc-btn {
+  background-color: #1e73b8;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.bc-btn--primary {
+  margin-top: 15px;
+}
+
+.bc-btn--outline {
+  border: 2px solid #1e73b8;
+  background-color: white;
+  color: #1e73b8;
+}
+
+.bc-divider {
+  margin-top: 40px;
+  border-top: 1px solid #d9e2ea;
+}
+
+.bc-card--result {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d9e2ea;
+}
+
+.bc-card__left {
+  flex: 1;
+}
+
+.bc-link {
+  color: #1e73b8;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.bc-meta {
+  font-size: 14px;
+  color: #5b6770;
+  margin: 8px 0;
+}
+
+.bc-btn {
+  margin-top: 15px;
+}
+
+.bc-card__right {
+  text-align: center;
+  flex-basis: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bc-score {
+  background-color: #0a8f3f;
+  color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.bc-status-cancelled {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 10px;
+  padding: 6px 12px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.bc-status-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #721c24;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.bc-status-cancelled span {
+  font-size: 14px;
+}
