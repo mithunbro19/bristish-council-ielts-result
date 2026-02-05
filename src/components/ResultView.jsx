@@ -16,7 +16,7 @@ const ResultView = ({ onBack }) => {
         <div className="result-bc-container">
           <div className="result-detail-header-left">
             <h2 className="result-detail-title">
-              IELTS for UKVI Academic: 14 January 2023
+              IELTS for UKVI Academic: 6 January 2026
             </h2>
             <p className="result-detail-subtitle">
               MD. NUMAN AHMED <br />
