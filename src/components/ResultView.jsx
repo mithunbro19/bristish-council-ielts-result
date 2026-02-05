@@ -3,10 +3,10 @@ import "./ResultView.css";
 
 const ResultView = ({ onBack }) => {
   const scoreData = [
-    { label: "Listening", score: "5.0", icon: "👂" },
-    { label: "Reading", score: "4.0", icon: "📖" },
-    { label: "Writing", score: "5.0", icon: "✍️" },
-    { label: "Speaking", score: "5.5", icon: "🗣️" },
+    { label: "Listening", score: "8.0", icon: "👂" },
+    { label: "Reading", score: "6.5", icon: "📖" },
+    { label: "Writing", score: "7.0", icon: "✍️" },
+    { label: "Speaking", score: "6.5", icon: "🗣️" },
   ];
 
   return (
@@ -133,10 +133,7 @@ const ResultView = ({ onBack }) => {
                 </div>
 
                 <p className="result-detail-score-explanation-text">
-                  Test takers at Band {item.score} typically have a limited ability
-                  to deal with straightforward factual and opinion-based texts.
-                  Their ability to understand meaning is generally within sentences
-                  rather than across sentences.
+                  Test takers at Band {item.score} 8 can understand long and complex spoken English with a very high level of accuracy. They can easily follow fast speech, different accents, and detailed discussions in both academic and everyday situations. They are able to identify main ideas, supporting details, opinions, and implied meanings without difficulty. They can understand indirect language, speaker attitudes, and purpose clearly. They have strong short-term memory, which helps them remember important information from long recordings. They can deal confidently with unfamiliar topics and rarely misunderstand what they hear.
                 </p>
 
                 <div className="result-detail-score-explanation-how-to-improve">
@@ -144,10 +141,7 @@ const ResultView = ({ onBack }) => {
                     How to improve:
                   </p>
                   <p className="result-detail-score-explanation-improve-text">
-                    Continue practising regularly by using everyday materials such
-                    as news, podcasts, and short texts. Focus on improving
-                    vocabulary and understanding meaning beyond individual
-                    sentences.
+                    Continue practicing with advanced-level listening materials such as Cambridge IELTS tests, BBC programs, and TED Talks. Listen regularly to different English accents including British, American, and Australian. Before listening, read the questions carefully and try to predict the type of answer needed. Improve your vocabulary, especially academic and topic-based words. Focus on understanding paraphrasing, as the same idea is often expressed using different words. Practice under exam conditions without pausing the audio and work on reducing spelling and grammar mistakes. Review your mistakes after each practice test and learn from them to improve accuracy and concentration.
                   </p>
                 </div>
               </div>
