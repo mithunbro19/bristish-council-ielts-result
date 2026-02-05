@@ -16,20 +16,20 @@ const ResultView = ({ onBack }) => {
         <div className="result-bc-container">
           <div className="result-detail-header-left">
             <h2 className="result-detail-title">
-              IELTS for UKVI Academic: 6 January 2026
+              IELTS for UKVI Academic: 1 February 2026
             </h2>
             <p className="result-detail-subtitle">
-              MD. NUMAN AHMED <br />
-              British Council Sylhet
+              MD. MITHUN HOSSEN ZEHAD <br />
+              British Council Dhaka
             </p>
           </div>
 
           <div className="result-detail-header-right">
             <p className="result-detail-meta">
-              Reference: <strong>A4-BD001-P-8790589</strong>
+              Reference: <strong>A4-BD001-C-14420768</strong>
             </p>
             <p className="result-detail-meta">
-              TRF number: <strong>22BD050908AHMM001A</strong>
+              TRF number: <strong>22BD010908AHMM001A</strong>
             </p>
           </div>
         </div>
@@ -59,7 +59,7 @@ const ResultView = ({ onBack }) => {
                 Your overall band <br /> score
               </p>
 
-              <div className="result-detail-band-circle">5</div>
+              <div className="result-detail-band-circle">7</div>
 
               <a href="#" className="result-detail-link">
                 View full scores and <br /> explanation
@@ -71,9 +71,11 @@ const ResultView = ({ onBack }) => {
           <div className="result-detail-info-box">
             <div className="result-detail-info-box-triangle"></div>
             <div className="result-detail-info-text">
-              This means you’re a “Modest User”
+              This means you’re a “Good User”
               <div style={{marginTop: "8px"}}></div>
-              The test taker has a partial command of the language and copes with overall meaning in most situations, although they are likely to make many mistakes. They should be able to handle basic communication in their own field.
+              The test taker has an operational command of the language, though with occasional inaccuracies, inappropriate usage, and misunderstandings in some situations. They generally handle complex language well and understand detailed reasoning. They can communicate effectively in most academic, professional, and social contexts.
+
+
             </div>
           </div>
 
@@ -102,7 +104,7 @@ const ResultView = ({ onBack }) => {
             {/* Overall Row */}
             <div className="result-detail-score-item result-detail-score-overall">
               <span>Your overall band score</span>
-              <span>5.0</span>
+              <span>7.0</span>
             </div>
           </div>
 
