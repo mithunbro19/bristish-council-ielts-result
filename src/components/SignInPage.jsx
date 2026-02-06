@@ -1,23 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import backgroundImgUrl from '../assets/british-council.png';
 
 const SignInPage = ({ onLoginSuccess }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
-  // State for the inline notification
   const [error, setError] = useState('');
+  
+  // Track screen width for responsiveness
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 480);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const DEMO_PASSWORD = "mithun466";
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    
     if (password === DEMO_PASSWORD) {
-      setError(''); // Clear error
+      setError('');
       onLoginSuccess();
     } else {
-      // Set the notification message
       setError('Incorrect email address or password. Please try again.');
     }
   };
@@ -26,44 +32,45 @@ const SignInPage = ({ onLoginSuccess }) => {
     container: {
       minHeight: '100vh',
       width: '100%',
-      backgroundColor: '#5e2d91', 
+      backgroundColor: '#5e2d91',
       backgroundImage: `url(${backgroundImgUrl})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
       display: 'flex',
       justifyContent: 'center',
-      alignItems: 'center',
+      alignItems: isMobile ? 'flex-start' : 'center', // Align to top on small phones
       fontFamily: '"Segoe UI", Roboto, Helvetica, Arial, sans-serif',
-      padding: '20px',
+      padding: isMobile ? '10px' : '20px',
       boxSizing: 'border-box',
     },
     card: {
       backgroundColor: '#ffffff',
       width: '100%',
+      // Responsive width: nearly full width on mobile, max 480px on desktop
       maxWidth: '480px',
-      padding: '40px',
-      borderRadius: '8px',
+      padding: isMobile ? '25px 20px' : '40px', 
+      borderRadius: isMobile ? '0px' : '8px', // Full width look on tiny screens
       boxShadow: '0 10px 25px rgba(0,0,0,0.1)',
       textAlign: 'left',
       color: '#1e1e1e',
+      marginTop: isMobile ? '20px' : '0',
     },
     logoSvg: {
-      height: '50px',
+      height: isMobile ? '40px' : '50px',
       marginBottom: '20px',
       display: 'block',
     },
     header: {
-      fontSize: '32px',
+      fontSize: isMobile ? '26px' : '32px',
       fontWeight: '700',
       color: '#23085a',
       margin: '0 0 20px 0',
     },
     subText: {
-      fontSize: '15px',
+      fontSize: '14px',
       lineHeight: '1.5',
       color: '#555555',
-      marginBottom: '30px',
+      marginBottom: '25px',
     },
     errorNotification: {
       backgroundColor: '#fdf2f2',
@@ -72,27 +79,22 @@ const SignInPage = ({ onLoginSuccess }) => {
       borderRadius: '4px',
       borderLeft: '4px solid #d32f2f',
       marginBottom: '20px',
-      fontSize: '14px',
+      fontSize: '13px',
       fontWeight: '500',
     },
-    formGroup: {
-      marginBottom: '20px',
-    },
+    formGroup: { marginBottom: '20px' },
     label: {
       display: 'block',
       fontWeight: '700',
-      fontSize: '15px',
+      fontSize: '14px',
       marginBottom: '8px',
       color: '#23085a',
     },
-    inputWrapper: {
-      position: 'relative',
-      width: '100%',
-    },
+    inputWrapper: { position: 'relative', width: '100%' },
     input: {
       width: '100%',
       padding: '12px 15px',
-      fontSize: '16px',
+      fontSize: '16px', // 16px prevents iOS zoom on focus
       border: error ? '1px solid #d32f2f' : '1px solid #cccccc',
       borderRadius: '4px',
       boxSizing: 'border-box',
@@ -108,11 +110,10 @@ const SignInPage = ({ onLoginSuccess }) => {
       color: '#0062cc',
       fontWeight: '600',
       cursor: 'pointer',
-      padding: '5px',
     },
     signInBtn: {
       width: '100%',
-      padding: '12px',
+      padding: '14px',
       backgroundColor: '#005596',
       color: 'white',
       border: 'none',
@@ -121,28 +122,27 @@ const SignInPage = ({ onLoginSuccess }) => {
       fontWeight: '700',
       cursor: 'pointer',
       marginTop: '10px',
-      marginBottom: '25px',
+      marginBottom: '20px',
     },
     link: { color: '#0062cc', textDecoration: 'none', fontWeight: '600' },
-    forgotPass: { fontSize: '15px', color: '#555555', marginBottom: '25px' },
-    goBack: { fontSize: '15px', color: '#555555', textAlign: 'center' },
+    forgotPass: { fontSize: '14px', color: '#555555', marginBottom: '20px' },
+    goBack: { fontSize: '14px', color: '#555555', textAlign: 'center' },
   };
 
   return (
     <div style={styles.container}>
       <div style={styles.card}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" style={styles.logoSvg}>
-            <g fill="#23085a">
-                <circle cx="12" cy="12" r="10"/><circle cx="38" cy="12" r="10"/>
-                <circle cx="12" cy="38" r="10"/><circle cx="38" cy="38" r="10"/>
-                <text x="60" y="28" fontFamily="Arial" fontWeight="bold" fontSize="24">BRITISH</text>
-                <text x="60" y="52" fontFamily="Arial" fontSize="24">COUNCIL</text>
-            </g>
+          <g fill="#23085a">
+            <circle cx="12" cy="12" r="10"/><circle cx="38" cy="12" r="10"/>
+            <circle cx="12" cy="38" r="10"/><circle cx="38" cy="38" r="10"/>
+            <text x="60" y="28" fontFamily="Arial" fontWeight="bold" fontSize="24">BRITISH</text>
+            <text x="60" y="52" fontFamily="Arial" fontSize="24">COUNCIL</text>
+          </g>
         </svg>
 
         <h1 style={styles.header}>Sign in</h1>
         
-        {/* Error Notification shown only when error state exists */}
         {error && <div style={styles.errorNotification}>{error}</div>}
 
         <p style={styles.subText}>
@@ -173,7 +173,7 @@ const SignInPage = ({ onLoginSuccess }) => {
                 required
               />
               <button type="button" onClick={() => setShowPassword(!showPassword)} style={styles.showBtn}>
-                
+                Hide
               </button>
             </div>
           </div>
