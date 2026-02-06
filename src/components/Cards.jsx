@@ -45,8 +45,8 @@ export default function Cards({ onShowResult }) {
 
           <div className="bc-card__right">
             <p className="bc-muted mb-10">Overall band score</p>
-            <div className="bc-score" aria-label="Overall band score 5">
-              5
+            <div className="bc-score" aria-label="Overall band score 7">
+              7
             </div>
           </div>
         </div>
