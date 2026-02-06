@@ -133,3 +133,152 @@
 .bc-status-cancelled span {
   font-size: 14px;
 }
+
+
+/* ============================
+   Tablet & Mobile (<= 768px)
+============================= */
+
+@media (max-width: 768px) {
+
+  .bc-section {
+    padding: 30px 16px;
+  }
+
+  .bc-container,
+  .bc-card-section {
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  .bc-h2 {
+    font-size: 20px;
+  }
+
+  .bc-panel {
+    padding: 18px;
+    margin-bottom: 24px;
+  }
+
+  .bc-card--result {
+    padding: 18px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .bc-card__right {
+    flex-basis: 100%;
+    margin-top: 10px;
+  }
+
+  .bc-divider {
+    margin-top: 24px;
+  }
+}
+
+
+/* ============================
+   Mobile (<= 480px)
+============================= */
+
+@media (max-width: 480px) {
+
+  .bc-section {
+    padding: 20px 12px;
+  }
+
+  .bc-h2 {
+    font-size: 18px;
+  }
+
+  .bc-muted {
+    font-size: 12px;
+  }
+
+  .bc-panel {
+    padding: 14px;
+    margin-bottom: 18px;
+  }
+
+  .bc-card--result {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px;
+  }
+
+  .bc-card__left {
+    width: 100%;
+  }
+
+  .bc-card__right {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+  }
+
+  .bc-link {
+    font-size: 16px;
+    word-break: break-word;
+  }
+
+  .bc-meta {
+    font-size: 12px;
+    margin: 6px 0;
+  }
+
+  .bc-btn {
+    width: 100%;
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+
+  .bc-score {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .bc-status-cancelled {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .bc-divider {
+    margin-top: 16px;
+  }
+}
+
+
+/* ============================
+   Very Small Phones (<= 360px)
+============================= */
+
+@media (max-width: 360px) {
+
+  .bc-h2 {
+    font-size: 16px;
+  }
+
+  .bc-link {
+    font-size: 14px;
+  }
+
+  .bc-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .bc-score {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .bc-panel,
+  .bc-card--result {
+    padding: 12px;
+  }
+}
+

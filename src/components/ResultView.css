@@ -314,3 +314,189 @@
   line-height: 1.6;
   color: #5b6770;
 }
+
+/* ============================
+   Result Detail Page Responsive
+============================= */
+
+/* Tablet / small screens */
+@media (max-width: 768px) {
+
+  .result-detail-header {
+    padding: 20px 16px;
+  }
+
+  .result-detail-header .result-bc-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .result-detail-header-right {
+    text-align: left;
+  }
+
+  .result-detail-tabs {
+    flex-wrap: wrap;
+  }
+
+  .result-detail-tab {
+    margin: 6px 4px;
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+
+  .result-detail-main {
+    padding: 20px 16px;
+  }
+
+  .result-detail-band-card-inner {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  .result-detail-band-circle {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+  }
+
+  .result-detail-info-box,
+  .result-detail-banner,
+  .result-detail-score-explanation-card {
+    padding: 16px;
+    max-width: 100%;
+  }
+
+  .result-detail-score-explanation-text,
+  .result-detail-score-explanation-how-to-improve {
+    max-width: 100%;
+  }
+}
+
+/* Mobile (<= 480px) */
+@media (max-width: 480px) {
+
+  .result-detail-header {
+    padding: 16px 12px;
+  }
+
+  .result-detail-header .result-bc-container {
+    gap: 6px;
+  }
+
+  .result-detail-title {
+    font-size: 16px;
+  }
+
+  .result-detail-subtitle,
+  .result-detail-header-right,
+  .result-detail-meta {
+    font-size: 12px;
+  }
+
+  .result-detail-tab {
+    padding: 10px 12px;
+    font-size: 12px;
+    margin: 4px 2px;
+  }
+
+  .result-detail-main {
+    padding: 16px 12px;
+  }
+
+  .result-detail-band-card-inner {
+    padding: 0 12px;
+  }
+
+  .result-detail-band-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .result-detail-info-text,
+  .result-detail-score-explanation-text,
+  .result-detail-score-explanation-how-to-improve {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .result-detail-banner-title {
+    font-size: 18px;
+  }
+
+  .result-detail-banner-text {
+    font-size: 13px;
+  }
+
+  .result-detail-banner-btn {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+
+  .result-detail-full-score-title {
+    font-size: 18px;
+  }
+
+  .result-detail-score-item {
+    font-size: 13px;
+  }
+
+  .result-detail-score-explanation-card {
+    padding: 18px 12px;
+  }
+}
+
+/* Very Small Phones (<= 360px) */
+@media (max-width: 360px) {
+
+  .result-detail-title {
+    font-size: 15px;
+  }
+
+  .result-detail-subtitle,
+  .result-detail-header-right,
+  .result-detail-meta {
+    font-size: 11px;
+  }
+
+  .result-detail-tab {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+
+  .result-detail-band-circle {
+    width: 55px;
+    height: 55px;
+    font-size: 18px;
+  }
+
+  .result-detail-info-text,
+  .result-detail-score-explanation-text,
+  .result-detail-score-explanation-how-to-improve {
+    font-size: 12px;
+  }
+
+  .result-detail-banner-title {
+    font-size: 16px;
+  }
+
+  .result-detail-banner-text {
+    font-size: 12px;
+  }
+
+  .result-detail-banner-btn {
+    padding: 6px 16px;
+    font-size: 12px;
+  }
+
+  .result-detail-full-score-title {
+    font-size: 16px;
+  }
+
+  .result-detail-score-item {
+    font-size: 12px;
+  }
+}

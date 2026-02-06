@@ -38,3 +38,87 @@
   max-width: 250px;
   width: 100%;
 }
+
+/* ============================
+   Hero Section Responsive
+============================= */
+
+@media (max-width: 768px) {
+
+  .bc-hero {
+    padding: 30px 16px;
+  }
+
+  .bc-hero-inner {
+    gap: 24px;
+    max-width: 100%;
+  }
+
+  .bc-h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .bc-paragraph {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .bc-hero-text {
+    text-align: center;
+  }
+
+  .bc-hero-image {
+    max-width: 200px;
+  }
+}
+
+
+/* ============================
+   Mobile (<= 480px)
+============================= */
+
+@media (max-width: 480px) {
+
+  .bc-hero {
+    padding: 24px 12px;
+  }
+
+  .bc-h2 {
+    font-size: 24px;
+  }
+
+  .bc-paragraph {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .bc-hero-image {
+    max-width: 170px;
+  }
+
+  .bc-hero-inner {
+    flex-direction: column;
+  }
+}
+
+
+/* ============================
+   Very Small Phones (<= 360px)
+============================= */
+
+@media (max-width: 360px) {
+
+  .bc-h2 {
+    font-size: 20px;
+  }
+
+  .bc-paragraph {
+    font-size: 13px;
+  }
+
+  .bc-hero-image {
+    max-width: 150px;
+  }
+}
+

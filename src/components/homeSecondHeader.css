@@ -78,6 +78,90 @@
   color: #2b1a66;
 }
 
+/* ============================
+   BC2 Header Responsive
+============================= */
+
+/* Tablet / small screens */
+@media (max-width: 768px) {
+  .bc2-container {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .bc2-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 10px;
+  }
+
+  .bc2-logos {
+    gap: 12px;
+  }
+
+  .bc2-bc-logo,
+  .bc2-ielts-logo {
+    height: 30px;
+  }
+
+  .bc2-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .bc2-tab {
+    padding: 10px 14px;
+    font-size: 13px;
+    min-height: 38px;
+    border-radius: 5px;
+  }
+}
+
+/* Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .bc2-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .bc2-bc-logo,
+  .bc2-ielts-logo {
+    height: 28px;
+  }
+
+  .bc2-tabs {
+    flex-direction: column;
+    width: 100%;
+    gap: 4px;
+  }
+
+  .bc2-tab {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 8px 10px;
+    min-height: 36px;
+  }
+}
+
+/* Very Small Phones (<= 360px) */
+@media (max-width: 360px) {
+  .bc2-tab {
+    font-size: 11px;
+    padding: 6px 8px;
+    min-height: 32px;
+  }
+
+  .bc2-bc-logo,
+  .bc2-ielts-logo {
+    height: 26px;
+  }
+}
+
+
 /* Responsive */
 @media (max-width: 760px) {
   .bc2-tabs {

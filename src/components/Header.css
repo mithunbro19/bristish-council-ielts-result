@@ -136,6 +136,150 @@
   color: #2b1a66;
 }
 
+/* ============================
+   Header & Navbar Responsive
+============================= */
+
+@media (max-width: 768px) {
+
+  /* Top bar */
+  .topbar {
+    justify-content: center;
+    padding: 6px 12px;
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+
+  .topbar button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  /* Main navbar */
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .navbar nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar nav a {
+    margin: 4px 6px;
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  /* Header container */
+  .bc2-container {
+    width: 100%;
+    padding: 14px 12px 0;
+  }
+
+  /* Logos */
+  .bc2-logos {
+    gap: 12px;
+  }
+
+  .bc2-bc-logo,
+  .bc2-ielts-logo {
+    height: 30px;
+  }
+
+  /* Tabs */
+  .bc2-tabs {
+    justify-content: center;
+  }
+
+  .bc2-tab {
+    padding: 10px 14px;
+    font-size: 13px;
+    min-height: 38px;
+  }
+}
+
+
+/* ============================
+   Mobile (<= 480px)
+============================= */
+
+@media (max-width: 480px) {
+
+  /* Top bar */
+  .topbar {
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  /* Logo */
+  .logo {
+    font-size: 14px;
+    gap: 6px;
+  }
+
+  .logo img {
+    height: 32px;
+  }
+
+  /* Navbar links */
+  .navbar nav a {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  /* BC header top row */
+  .bc2-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Tabs */
+  .bc2-tabs {
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+  }
+
+  .bc2-tab {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+
+/* ============================
+   Very Small Phones (<= 360px)
+============================= */
+
+@media (max-width: 360px) {
+
+  .topbar {
+    font-size: 10px;
+  }
+
+  .navbar nav a {
+    font-size: 11px;
+  }
+
+  .bc2-tab {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .bc2-bc-logo,
+  .bc2-ielts-logo {
+    height: 26px;
+  }
+}
+
+
 /* Responsive */
 @media (max-width: 760px) {
   .bc2-tabs {

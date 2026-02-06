@@ -36,3 +36,79 @@
   line-height: 1.5;
   max-width: 520px;
 }
+
+/* ============================
+   Footer Responsive
+============================= */
+
+@media (max-width: 768px) {
+
+  .bc-footer {
+    padding: 20px 16px;
+  }
+
+  .bc-footer__inner {
+    gap: 14px;
+  }
+
+  .bc-footer__links {
+    gap: 10px;
+  }
+
+  .bc-footer__links a {
+    font-size: 13px;
+  }
+
+  .bc-footer__text {
+    font-size: 12px;
+    max-width: 100%;
+  }
+}
+
+
+/* ============================
+   Mobile Footer
+============================= */
+
+@media (max-width: 480px) {
+
+  .bc-footer {
+    padding: 18px 12px;
+    text-align: center;
+  }
+
+  .bc-footer__inner {
+    align-items: center;
+  }
+
+  .bc-footer__links {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .bc-footer__links a {
+    font-size: 12px;
+  }
+
+  .bc-footer__text {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+}
+
+
+/* ============================
+   Very Small Phones
+============================= */
+
+@media (max-width: 360px) {
+
+  .bc-footer__links a {
+    font-size: 11px;
+  }
+
+  .bc-footer__text {
+    font-size: 10px;
+  }
+}
+
